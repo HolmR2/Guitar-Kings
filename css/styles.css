@@ -9,6 +9,7 @@ footer {
   color: #ffffff;
 }
 
+
 footer {
   text-align: center;
 }
@@ -47,4 +48,23 @@ h2,
 
 .product-list h2 {
   font-family: "Roboto", sans-serif;
+}
+
+/*Home page */
+
+.review-images {
+  border-radius: 50%;
+}
+
+.home-info_image {
+  border-radius: 100px;
+}
+
+.header-background {
+  background-image: url(../images/home-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 70vh;
+  background-position-x: right;
+  background-position-y: bottom;
 }
