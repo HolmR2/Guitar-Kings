@@ -48,6 +48,10 @@ h2,
   font-family: "bootsandspurs", Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.logo {
+  text-decoration: none;
+}
+
 .product-list h2 {
   font-family: "Roboto", sans-serif;
 }
@@ -77,4 +81,26 @@ textarea,
 select {
   border: 1px solid #c4c4c4;
   border-radius: 5px;
+}
+
+/* navigation */
+
+nav li {
+  display: inline-block;
+}
+
+nav ul {
+  padding: 0px;
+}
+
+nav a {
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.current {
+  text-decoration: underline;
 }
