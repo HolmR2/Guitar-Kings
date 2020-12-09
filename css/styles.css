@@ -9,7 +9,6 @@ footer {
   color: #ffffff;
 }
 
-
 footer {
   text-align: center;
 }
@@ -22,6 +21,13 @@ header a {
   background-color: red;
   color: #fff;
   font-size: 1.5em;
+  border-radius: 5%;
+}
+
+.cta-sale {
+  background-color: limegreen;
+  font-size: 1.5em;
+  border-radius: 5%;
 }
 
 .reviews {
@@ -30,10 +36,6 @@ header a {
 
 .featured-products {
   background-color: #fbfbfb;
-}
-
-.cta-sale {
-  background-color: limegreen;
 }
 
 body {
