@@ -9,6 +9,11 @@ footer {
   color: #ffffff;
 }
 
+header {
+  display: flex;
+  align-items: center;
+}
+
 footer {
   text-align: center;
   position: relative;
@@ -74,6 +79,7 @@ h2,
 
 .logo {
   text-decoration: none;
+  margin-left: 10px;
 }
 
 .product-list h2 {
@@ -81,14 +87,6 @@ h2,
 }
 
 /*Home page */
-
-.review-images {
-  border-radius: 50%;
-}
-
-.home-info_image {
-  border-radius: 100px;
-}
 
 .header-background {
   background-image: url(../images/home-header.jpg);
@@ -107,6 +105,24 @@ h2,
   text-align: center;
 }
 
+.home-info {
+  max-width: 1000px;
+  margin: 50px auto;
+  display: flex;
+}
+
+.home-info > * {
+  flex: 1;
+}
+
+.home-info_image {
+  border-radius: 100px;
+}
+
+.review-images {
+  border-radius: 50%;
+}
+
 /*Contact page */
 input,
 textarea,
@@ -117,8 +133,11 @@ select {
 
 /* navigation */
 
+nav {
+}
+
 nav li {
-  display: inline-block;
+  display: inline;
 }
 
 nav ul {
@@ -135,4 +154,10 @@ a {
 
 .current {
   text-decoration: underline;
+}
+
+.adirondack-red {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
