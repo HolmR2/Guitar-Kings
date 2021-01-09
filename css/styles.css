@@ -30,7 +30,9 @@ header a {
   background-color: red;
   color: #fff;
   font-size: 1.5em;
-  border-radius: 5%;
+  padding: 10px 80px;
+  border-radius: 5px;
+  text-transform: uppercase;
 }
 
 .cta-sale {
@@ -44,7 +46,7 @@ header a {
 .cta-view {
   background-color: red;
   color: #fff;
-  font-size: 1em;
+  font-size: 1.5em;
   padding: 10px 80px;
   border-radius: 5px;
   text-transform: uppercase;
@@ -105,22 +107,46 @@ h2,
   text-align: center;
 }
 
-.home-info {
+.home-info,
+.reviews_content {
   max-width: 1000px;
   margin: 50px auto;
   display: flex;
 }
 
-.home-info > * {
+.home-info_image {
+  border-radius: 100px;
+  width: 50%;
+  height: 50%;
+}
+
+.home-info > *,
+.reviews_content > * {
   flex: 1;
 }
 
-.home-info_image {
-  border-radius: 100px;
+.reviews {
+  text-align: center;
+  padding: 50px;
+}
+
+.reviews_content {
+  text-align: left;
+  margin: auto;
+}
+
+.reviews_content div {
+  margin: 50px;
+}
+
+.reviews_name {
+  display: block;
 }
 
 .review-images {
+  width: 80px;
   border-radius: 50%;
+  float: right;
 }
 
 /*Contact page */
