@@ -29,7 +29,7 @@ header a {
 .cta {
   background-color: red;
   color: #fff;
-  font-size: 1.5em;
+  font-size: 1, 5em;
   padding: 10px 80px;
   border-radius: 5px;
   text-transform: uppercase;
@@ -116,11 +116,13 @@ h2,
 
 .home-info_image {
   border-radius: 100px;
-  width: 50%;
-  height: 50%;
+  width: 100%;
 }
 
-.home-info > *,
+.home-info > * {
+  flex: 1;
+}
+
 .reviews_content > * {
   flex: 1;
 }
@@ -155,6 +157,29 @@ textarea,
 select {
   border: 1px solid #c4c4c4;
   border-radius: 5px;
+  margin: 10px 10px 10px 0px;
+  padding: 10px;
+}
+
+textarea {
+  height: 65%;
+}
+
+.contact {
+  max-width: 1000px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.form-wrapper {
+  display: flex;
+  text-align: left;
+}
+
+.form-wrapper > * {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 /* navigation */
@@ -182,8 +207,38 @@ a {
   text-decoration: underline;
 }
 
-.adirondack-red {
+/*product page*/
+
+.product-specific {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+.product-specific > * {
+  flex: 1;
+}
+
+.product-specific_details {
+  padding: 0px 30px;
+}
+
+.product-specific_details a {
+  display: block;
+  width: 95.767px;
+  margin: auto;
+}
+
+.product-specific_price {
+  font-size: 1.5em;
+}
+
+.product-image {
+  width: 100%;
+}
+
+.product-image_thumbnails {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
 }
