@@ -160,6 +160,10 @@ h2,
   flex-direction: column;
 }
 
+.home-info h2 {
+  text-align: center;
+}
+
 .home-info_image {
   border-radius: 100px;
   width: 100%;
@@ -225,6 +229,7 @@ select {
 
 textarea {
   height: 65%;
+  min-height: 100px;
 }
 
 .contact {
@@ -236,6 +241,7 @@ textarea {
 .form-wrapper {
   display: flex;
   text-align: left;
+  flex-direction: column;
 }
 
 .form-wrapper > * {
@@ -267,7 +273,8 @@ textarea {
 .product-specific {
   display: flex;
   max-width: 1000px;
-  margin: 50px auto;
+  margin-bottom: 50px;
+  flex-direction: column;
 }
 
 .product-specific > * {
@@ -300,7 +307,8 @@ textarea {
 
 .product-list {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: 1;
+
   grid-gap: 20px;
 }
 
@@ -319,6 +327,12 @@ textarea {
 .guitars {
   max-width: 1000px;
   margin: auto;
+}
+
+@media (min-width: 400px) {
+  .product-list {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (min-width: 600px) {
@@ -348,6 +362,22 @@ textarea {
   header label {
     display: none;
   }
+
+  .product-specific {
+    flex-direction: column-reverse;
+  }
+
+  .form-wrapper {
+    flex-direction: row;
+  }
+
+  .product-specific_details {
+    margin-bottom: 10px;
+  }
+
+  .home-info h2 {
+    text-align: left;
+  }
 }
 
 @media (min-width: 800px) {
@@ -371,5 +401,14 @@ textarea {
 
   .cta-view {
     padding: 10px 80px;
+  }
+
+  .product-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .product-specific {
+    flex-direction: row;
+    margin: 50px auto;
   }
 }
